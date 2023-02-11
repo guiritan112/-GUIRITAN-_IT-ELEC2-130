@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -21,9 +22,13 @@ public class MainActivity extends AppCompatActivity {
         Log.v(TAG, "This is warn log") ;
         Log.e(TAG, "This is an error log");
 
-         Button button = findViewById(R.id.button);
 
-          button.setOnClickListener(v -> Log.i(TAG, "Button Clicked"));
+            Log.i(TAG, "Button Clicked");
 
+        Button button = findViewById(R.id.button);
+
+        button.setOnClickListener(v -> Log.i(TAG, "Button Clicked"));
+ Intent intent = new Intent(MainActivity.this,SecondActivity.class);
+ startActivity(intent);
     }
 }
