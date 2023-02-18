@@ -1,9 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondActivity">
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/Relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/relative1"
+        tools:ignore="VisualLintTextFieldSize"
+        android:inputType="textEmailAddress"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/Relative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Relative1"
+        android:hint="@string/relative2"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize"
+        android:inputType="text"
+        android:autofillHints="" />
+
+
+    <EditText
+        android:id="@+id/relative3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Relative2"
+        android:layout_marginTop="24dp"
+        android:hint="@string/relative3"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize"
+        android:autofillHints="text"
+        android:inputType="textEmailSubject" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative3"
+        android:layout_marginTop="480dp"
+        android:layout_alignParentEnd="true"
+        android:text="@string/relative4" />
+
+</RelativeLayout>
