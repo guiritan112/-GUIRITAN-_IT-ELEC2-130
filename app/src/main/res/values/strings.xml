@@ -5,7 +5,7 @@
     <string name="linear3">Message</string>
     <string name="linear4">Send JP</string>
 
- 
+
     <string name="relative4">SEND JP</string>
     <string name="relative1">To</string>
     <string name="relative2">Subject</string>
@@ -15,5 +15,14 @@
     <string name="constraint1">To</string>
     <string name="constraint2">Subject</string>
     <string name="constraint3">Message</string>
+    <string name="button3" translatable="false">SEARCH</string>
+    <string name="checkbox1" translatable="false">Dogs</string>
+    <string name="checkbox2" translatable="false">Cats</string>
+    <string name="radiobutton1" translatable="false">Pirates</string>
+    <string name="radiobutton2" translatable="false">Ninja</string>
+    <string name="togglebutton1" translatable="false">ToggleButton</string>
+    <string name="switch1" translatable="false">Switch</string>
+    <string name="toggles" translatable="false">Toggles</string>
+    <string name="select_a_robot" translatable="false">Select a robot</string>
 
 </resources>
