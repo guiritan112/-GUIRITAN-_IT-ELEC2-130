@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
 
-        actionBar.setTitle("sotor| ActionBar");
+        actionBar.setTitle("SOTOR| ActionBar");
 
-        actionBar.setSubtitle("Soltice");
+        actionBar.setSubtitle("SOLSTICE");
 
         actionBar.setIcon(R.mipmap.ic_launcher);
 
@@ -50,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
             }
             case R.id.refresh: {
                 DialogFragment display = new DialogFragment();
-                display.show(getSupportFragmentManager(), "iMOHANG fRAGMENT");
+                display.show(getSupportFragmentManager(), "IMOHANG fRAGMENT");
                 break;
             }
             case R.id.copy: {
-                Toast.makeText(this, "cLICKER cOPY", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "CLICKER COPY", Toast.LENGTH_SHORT).show();
                 break;
             }
         }
