@@ -50,11 +50,11 @@ public class MainActivity extends AppCompatActivity {
             }
             case R.id.refresh: {
                 DialogFragment display = new DialogFragment();
-                display.show(getSupportFragmentManager(), "My Fragment");
+                display.show(getSupportFragmentManager(), "iMOHANG fRAGMENT");
                 break;
             }
             case R.id.copy: {
-                Toast.makeText(this, "Copy Clicker", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "cLICKER cOPY", Toast.LENGTH_SHORT).show();
                 break;
             }
         }
