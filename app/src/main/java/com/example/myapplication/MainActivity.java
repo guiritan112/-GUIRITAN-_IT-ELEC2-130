@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.DialogFragment;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -23,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
 
-        actionBar.setTitle("Ako si superman| ActionBar");
+        actionBar.setTitle("sotor| ActionBar");
 
-        actionBar.setSubtitle("Design A custom action Bar");
+        actionBar.setSubtitle("Soltice");
 
         actionBar.setIcon(R.mipmap.ic_launcher);
 
@@ -45,16 +44,19 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item){
 
         switch (item.getItemId()) {
-            case R.id.search:
+            case R.id.search:{
                 showAlertDialog();
                 break;
-            case R.id.refresh:
-                DialogFragment dialogFragment = new DialogFragment();
-                dialogFragment.show(getSupportFragmentManager(), "My Fragment");
-            case R.id.copy:
-                ;
+            }
+            case R.id.refresh: {
+                DialogFragment display = new DialogFragment();
+                display.show(getSupportFragmentManager(), "My Fragment");
+                break;
+            }
+            case R.id.copy: {
                 Toast.makeText(this, "Copy Clicker", Toast.LENGTH_SHORT).show();
                 break;
+            }
         }
         return super.onOptionsItemSelected(item);
 
