@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
 
+
 public class  MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
@@ -25,7 +26,7 @@ public class  MainActivity extends AppCompatActivity {
 
             Log.i(TAG, "Button Clicked");
 
-        Button button = findViewById(R.id.button);
+        Button button = findViewById(R.id.button2);
 
         button.setOnClickListener(v -> Log.i(TAG, "Button Clicked"));
  Intent intent = new Intent(MainActivity.this,SecondActivity.class);
