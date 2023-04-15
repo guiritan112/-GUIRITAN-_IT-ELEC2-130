@@ -32,14 +32,11 @@ public class HomeFragment extends Fragment {
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         final Button buttonGoToSecond = binding.buttonGoToSecond;
 
-        buttonGoToSecond.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v){
-                Intent intent = new Intent(getContext(), SecondActivity.class);
-                intent.putExtra("PASS ME","HI i'm from Main Activity!!!");
-                startActivity(intent);
-            }});
+        buttonGoToSecond.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), SecondActivity.class);
+            intent.putExtra("PASS ME","HI i'm from Main Activity!!!");
+            startActivity(intent);
+        });
         return root;
         }
 

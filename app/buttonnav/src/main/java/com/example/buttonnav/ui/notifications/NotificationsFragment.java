@@ -20,7 +20,6 @@ import com.example.buttonnav.databinding.FragmentNotificationsBinding;
 
 public class NotificationsFragment extends Fragment {
 
-    private FragmentNotificationsBinding binding;
     private BroadcastReceiver context;
 
     IntentFilter intentFilter;
@@ -38,7 +37,7 @@ public class NotificationsFragment extends Fragment {
         NotificationsViewModel notificationsViewModel =
                 new ViewModelProvider(this).get(NotificationsViewModel.class);
 
-        binding = FragmentNotificationsBinding.inflate(inflater, container, false);
+        com.example.buttonnav.databinding.FragmentNotificationsBinding binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
         textView = binding.textNotifications;
