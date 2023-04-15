@@ -86,7 +86,7 @@ public class NotificationsFragment extends Fragment {
                 textView.setText(currentBatteryHealth + "=Unknown");
             }
             if (deviceHealth == BatteryManager.BATTERY_HEALTH_UNSPECIFIED_FAILURE) {
-                textView.setText(currentBatteryHealth + "=unspecified Failure");
+                textView.setText(currentBatteryHealth + "= Failure");
             }
 
         }
